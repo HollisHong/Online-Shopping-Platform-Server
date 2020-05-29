@@ -9,7 +9,7 @@ function onlineShopClient() {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "amazon-price1.p.rapidapi.com",
-                "x-rapidapi-key": "39489d2f16msh8d0337a260b9aacp123c9bjsn0d5db0a44753"
+                "x-rapidapi-key": "fc6203c746msh05c6757930968d3p10ea0ejsne3ad81739582"
             }
         })
             .then(function (response) {
@@ -22,7 +22,7 @@ function onlineShopClient() {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "amazon-price1.p.rapidapi.com",
-                "x-rapidapi-key": "39489d2f16msh8d0337a260b9aacp123c9bjsn0d5db0a44753"
+                "x-rapidapi-key": "fc6203c746msh05c6757930968d3p10ea0ejsne3ad81739582"
             }
         })
             .then(function (response) {
@@ -31,11 +31,11 @@ function onlineShopClient() {
     }
 
     function findProductByID(ID) {
-        return fetch("https://amazon-price1.p.rapidapi.com/priceReport?asin=coke&marketplace=ES".replace('coke', ID), {
+        return fetch("https://amazon-price1.p.rapidapi.com/priceReport?asin=coke&marketplace=US".replace('coke', ID), {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "amazon-price1.p.rapidapi.com",
-                "x-rapidapi-key": "39489d2f16msh8d0337a260b9aacp123c9bjsn0d5db0a44753"
+                "x-rapidapi-key": "fc6203c746msh05c6757930968d3p10ea0ejsne3ad81739582"
             }
         })
             .then(function (response) {

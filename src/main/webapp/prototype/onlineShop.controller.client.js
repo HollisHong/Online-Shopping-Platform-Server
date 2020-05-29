@@ -5,16 +5,16 @@
     let $ProductRowsTemplate
     let $searchTitleFld
     let $searchBtn
-    let $ProductTitleDetail, $ProductPosterDetail, $ProductPriceDetail, $ProductRatingDetail, $ProductReviewDetail
+    let $ProductTitleDetail, $ProductCreatedAtDetail
+    // let $ProductHighDetail, $ProductLowDetail
     let service = new onlineShopClient()
 
 
     function renderDetails(details) {
         $ProductTitleDetail.html(details.title)
-        $ProductPriceDetail.html(details.price)
-        $ProductPosterDetail.attr('src', details.imageUrl)
-        $ProductRatingDetail.html(details.rating)
-        $ProductReviewDetail.html(details.totalReviews)
+        $ProductCreatedAtDetail.html(details.createdAt)
+        // $ProductHighDetail.html(details.highestPricing)
+        // $ProductLowDetail.html(details.lowestPricing)
     }
 
     function searchProductByID(event) {
@@ -67,10 +67,9 @@
             .click(searchProductByTitle)
 
         $ProductTitleDetail = $('.product-title-detail')
-        $ProductPosterDetail = $('.product-poster-detail')
-        $ProductPriceDetail = $('.product-price-detail')
-        $ProductRatingDetail =$('.product-rating-detail')
-        $ProductReviewDetail =$('.product-review-detail')
+        $ProductCreatedAtDetail = $('.product-createdAt-detail')
+        // $ProductHighDetail =$('.product-high-price-detail')
+        // $ProductLowDetail =$('.product-low-price-detail')
 
 
         findCoke()
