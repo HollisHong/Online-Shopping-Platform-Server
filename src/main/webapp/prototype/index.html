@@ -9,33 +9,34 @@
             src="https://code.jquery.com/jquery-3.5.1.min.js"
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"></script>
-    <script src="../services/omdb.service.client.js"></script>
-    <script src="./omdb.controller.client.js"></script>
+    <script src="../services/onlineShop.service.client.js"></script>
+    <script src="./onlineShop.controller.client.js"></script>
+
 
 </head>
 <body>
 <div class="container">
-    <h1>OMDB jQuery Client</h1>
+    <h1>OnlineShop jQuery Client</h1>
 
     <div class="row">
         <div class="col">
             <h2>Search</h2>
-            <input class="omdb-search-title" placeholder="Title"/>
-            <button class="omdb-search-btn">Search</button>
+            <input class="product-search-title" placeholder="Title"/>
+            <button class="product-search-btn">Search</button>
 
             <table>
                 <thead>
                 <tr>
                     <th>Title</th>
-                    <th>IMDB ID</th>
+                    <th>Price</th>
                     <th>Poster</th>
                 </tr>
                 </thead>
-                <tbody class="omdb-movie-rows">
-                <tr class="omdb-movie-row-template">
-                    <td class="modb-movie-title">Aliens</td>
-                    <td class="modb-movie-imdbID">tt1234</td>
-                    <td><img class="modb-movie-poster" height="50px" src="https://upload.wikimedia.org/wikipedia/en/f/fb/Aliens_poster.jpg"/></td>
+                <tbody class="product-rows">
+                <tr class="product-row-template">
+                    <td class="product-title"></td>
+                    <td class="product-price"></td>
+                    <td><img class="product-poster" height="80px"/></td>
                 </tr>
                 </tbody>
             </table>
@@ -43,10 +44,13 @@
         </div>
         <div class="col">
             <h2>Details</h2>
-            <h3 class="omdb-movie-title-detail"></h3>
-            <img height="100px" class="omdb-movie-poster-detail">
-            <p class="omdb-movie-plot-detail"></p>
+            <img height="100px" class="product-poster-detail">
+            <h3 class="product-title-detail"></h3>
+            <h3 class="product-price-detail"></h3>
+            <h3 class="product-rating-detail"></h3>
+            <h3 class="product-review-detail"></h3>
         </div>
+
     </div>
 </div>
 </body>

@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4306934f-39f2-47f2-8757-1d33e12ea190" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/prototype/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/prototype/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/prototype/onlineShop.controller.client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/prototype/onlineShop.controller.client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/services/onlineShop.service.client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/services/onlineShop.service.client.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wbdv-sum20-jisiyuan_Cheng-server-java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wbdv-sum20-jisiyuan_cheng-client-react" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,12 +52,12 @@
     <property name="settings.editor.selected.configurable" value="xml.catalog" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\cs4550-assignment\cs4550-summer-2020-project-group17\myapp\src\main" />
-      <recent name="C:\cs4550-assignment\cs4550-summer-2020-project-group17" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\cs4550-assignment\cs4550-summer-2020-project-group17" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\cs4550-assignment\cs4550-summer-2020-project-group17" />
+      <recent name="C:\cs4550-assignment\cs4550-summer-2020-project-group17\myapp\src\main" />
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.myapp-0.0.1-SNAPSHOT.jar">
@@ -63,18 +65,18 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/myapp-0.0.1-SNAPSHOT.jar" />
       <method v="2" />
     </configuration>
-    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="cs4550-summer-2020-project-group17" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.myapp.DemoApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="omdb.service.client.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/main/webapp/services/omdb.service.client.js" working-dir="$PROJECT_DIR$/src/main/webapp/services">
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="JAR Application.myapp-0.0.1-SNAPSHOT.jar" />
-      <item itemvalue="Spring Boot.Unnamed" />
+      <item itemvalue="Node.js.omdb.service.client.js" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.omdb.service.client.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -87,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590696776109</updated>
       <workItem from="1590696777602" duration="4651000" />
-      <workItem from="1590762928862" duration="485000" />
+      <workItem from="1590762928862" duration="13819000" />
     </task>
     <servers />
   </component>
@@ -95,37 +97,41 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="316" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590763368583">
+    <state x="316" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590766095999">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
-    <state x="316" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.1000@0.0.1500.1000" timestamp="1590763368583" />
+    <state x="316" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.1000@0.0.1500.1000" timestamp="1590766095999" />
     <state x="513" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590697052006">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
     <state x="513" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1500.1000@0.0.1500.1000" timestamp="1590697052006" />
-    <state x="481" y="291" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590763366652">
+    <state x="481" y="291" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590766053832">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
-    <state x="481" y="291" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1500.1000@0.0.1500.1000" timestamp="1590763366652" />
-    <state x="531" y="255" key="FileChooserDialogImpl" timestamp="1590763090324">
+    <state x="481" y="291" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1500.1000@0.0.1500.1000" timestamp="1590766053832" />
+    <state x="531" y="255" key="FileChooserDialogImpl" timestamp="1590776079119">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
-    <state x="531" y="255" key="FileChooserDialogImpl/0.0.1500.1000@0.0.1500.1000" timestamp="1590763090324" />
-    <state width="1458" height="269" key="GridCell.Tab.0.bottom" timestamp="1590763383860">
+    <state x="531" y="255" key="FileChooserDialogImpl/0.0.1500.1000@0.0.1500.1000" timestamp="1590776079119" />
+    <state width="1458" height="269" key="GridCell.Tab.0.bottom" timestamp="1590778563472">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
-    <state width="1458" height="269" key="GridCell.Tab.0.bottom/0.0.1500.1000@0.0.1500.1000" timestamp="1590763383860" />
-    <state width="1458" height="269" key="GridCell.Tab.0.center" timestamp="1590763383859">
+    <state width="1458" height="269" key="GridCell.Tab.0.bottom/0.0.1500.1000@0.0.1500.1000" timestamp="1590778563472" />
+    <state width="1458" height="269" key="GridCell.Tab.0.center" timestamp="1590778563471">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
-    <state width="1458" height="269" key="GridCell.Tab.0.center/0.0.1500.1000@0.0.1500.1000" timestamp="1590763383859" />
-    <state width="1458" height="269" key="GridCell.Tab.0.left" timestamp="1590763383859">
+    <state width="1458" height="269" key="GridCell.Tab.0.center/0.0.1500.1000@0.0.1500.1000" timestamp="1590778563471" />
+    <state width="1458" height="269" key="GridCell.Tab.0.left" timestamp="1590778563470">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
-    <state width="1458" height="269" key="GridCell.Tab.0.left/0.0.1500.1000@0.0.1500.1000" timestamp="1590763383859" />
-    <state width="1458" height="269" key="GridCell.Tab.0.right" timestamp="1590763383860">
+    <state width="1458" height="269" key="GridCell.Tab.0.left/0.0.1500.1000@0.0.1500.1000" timestamp="1590778563470" />
+    <state width="1458" height="269" key="GridCell.Tab.0.right" timestamp="1590778563471">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
-    <state width="1458" height="269" key="GridCell.Tab.0.right/0.0.1500.1000@0.0.1500.1000" timestamp="1590763383860" />
+    <state width="1458" height="269" key="GridCell.Tab.0.right/0.0.1500.1000@0.0.1500.1000" timestamp="1590778563471" />
+    <state x="413" y="216" width="672" height="678" key="search.everywhere.popup" timestamp="1590767817722">
+      <screen x="0" y="0" width="1500" height="1000" />
+    </state>
+    <state x="413" y="216" width="672" height="678" key="search.everywhere.popup/0.0.1500.1000@0.0.1500.1000" timestamp="1590767817722" />
   </component>
 </project>
