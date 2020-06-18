@@ -23,10 +23,17 @@ public class UserController {
   public User register(
           @RequestBody User user,
           HttpSession session) {
-    User currentUser = service.createUser(user);
-    session.setAttribute("currentUser", currentUser);
-    return currentUser;
+    User existingUser = service.findUserByUsername(user.getUsername());
+    if (existingUser == null) {
+      User currentUser = service.createUser(user);
+      session.setAttribute("currentUser", currentUser);
+      return currentUser;
+    }
+    return null;
   }
+//    User currentUser = service.createUser(user);
+//    session.setAttribute("currentUser", currentUser);
+//    return currentUser;
 
   @PostMapping("/api/login")
   public User login(
