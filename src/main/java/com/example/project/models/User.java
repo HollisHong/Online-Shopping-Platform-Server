@@ -1,5 +1,6 @@
 package com.example.project.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -27,7 +28,7 @@ public class User {
   private String type;
 
   @OneToMany(mappedBy = "owner")
-  private List<Product> products;
+  private List<Product> products = new ArrayList<>();
 
 
 
@@ -45,6 +46,10 @@ public class User {
 
   public String getBirthday() {
     return birthday;
+  }
+
+  public void addProduct(Product p) {
+    products.add(p);
   }
 
   public void setType(String type) {

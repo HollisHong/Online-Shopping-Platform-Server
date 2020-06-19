@@ -25,6 +25,7 @@ public class ProductService {
   public Product createProduct(Integer userId, Product product) {
     User user = userRepository.findUserById(userId);
     product.setOwner(user);
+    user.addProduct(product);
     return repository.save(product);
   }
   public Product findProductById(Integer id) {
@@ -40,6 +41,12 @@ public class ProductService {
     repository.deleteById(pid);
     List<Product> result = new ArrayList<Product>();
     return result;
+  }
+
+  public List<Product> findAllProductByUserId(Integer uid) {
+    User user = userRepository.findUserById(uid);
+    List<Product> products = user.getProducts();
+    return products;
   }
 
   public Product updateProduct(Integer pid, Product updatedProduct){

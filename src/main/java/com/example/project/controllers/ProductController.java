@@ -46,6 +46,14 @@ public class ProductController {
     return productService.findProductById(pid);
   }
 
+  @GetMapping("/api/users/{uid}/products")
+  public List<Product> findAllProductByUserId(
+          @PathVariable("uid") Integer userId)
+          {
+            return productService.findAllProductByUserId(userId);
+  }
+
+
   @DeleteMapping("/api/products/{id}")
   public List<Product> deleteProduct(
           @PathVariable("id") Integer pid) {
