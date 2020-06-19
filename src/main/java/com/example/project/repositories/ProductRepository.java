@@ -12,7 +12,7 @@ public interface ProductRepository
         extends CrudRepository<Product, Integer>
 {
   @Query("SELECT product FROM Product product WHERE product.id=:pid")
-  public Product findProductById(@Param("pid") Integer userId);
+  public Product findProductById(@Param("pid") Integer pid);
 
 
   @Query("SELECT product FROM Product product")

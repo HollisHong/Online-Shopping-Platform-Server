@@ -30,7 +30,16 @@ public class User {
   @OneToMany(mappedBy = "owner")
   private List<Product> products = new ArrayList<>();
 
+  @OneToMany(mappedBy = "reviewer")
+  private List<Review> reviews = new ArrayList<>();
 
+  public List<Review> getReviews() {
+    return reviews;
+  }
+
+  public void addReviews(Review review) {
+    this.reviews.add(review);
+  }
 
   public List<Product> getProducts() {
     return products;
