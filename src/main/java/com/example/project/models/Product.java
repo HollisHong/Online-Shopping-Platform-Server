@@ -21,6 +21,7 @@ public class Product {
   private String details;
 
   @ManyToOne
+  @JsonIgnore
   private User owner;
 
 

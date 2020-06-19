@@ -31,8 +31,9 @@ public class ProductService {
     return repository.findProductById(id);
   }
 
+
   public List<Product> findAllProduct() {
-    return (List<Product>)repository.findAll();
+    return repository.findAllProducts();
   }
 
   public List<Product> deleteProduct(Integer pid) {
