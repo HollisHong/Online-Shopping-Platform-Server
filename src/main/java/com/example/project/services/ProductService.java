@@ -2,8 +2,10 @@ package com.example.project.services;
 
 
 import com.example.project.models.Product;
+import com.example.project.models.User;
 import com.example.project.repositories.ProductRepository;
 
+import com.example.project.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,7 @@ import java.util.List;
 public class ProductService {
   @Autowired
   ProductRepository repository;
+  UserRepository userRepository;
 
   List<Product> products = new ArrayList<Product>();{
   }

@@ -1,9 +1,15 @@
 package com.example.project.models;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -12,10 +18,34 @@ public class User {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
+
+
   private String username;
   private String password;
   private String email;
+  private String birthday;
   private String type;
+
+  @OneToMany
+  private List<Product> products;
+
+
+
+  public List<Product> getProducts() {
+    return products;
+  }
+
+  public void setProducts(List<Product> products) {
+    this.products = products;
+  }
+
+  public void setBirthday(String birthday) {
+    this.birthday = birthday;
+  }
+
+  public String getBirthday() {
+    return birthday;
+  }
 
   public void setType(String type) {
     this.type = type;
@@ -56,4 +86,5 @@ public class User {
   public void setEmail(String email) {
     this.email = email;
   }
+
 }

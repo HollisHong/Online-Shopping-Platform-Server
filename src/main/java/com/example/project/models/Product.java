@@ -1,10 +1,11 @@
 package com.example.project.models;
 
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -16,6 +17,18 @@ public class Product {
   private String productName;
   private Double price;
   private String details;
+
+  @ManyToOne
+  private User owner;
+
+
+  public User getOwner() {
+    return owner;
+  }
+
+  public void setOwner(User owner) {
+    this.owner = owner;
+  }
 
   public Double getPrice() {
     return price;
@@ -44,14 +57,7 @@ public class Product {
   public void setPrice(Double price) {
     this.price = price;
   }
-
-  public Product(Integer id, String productName, Double price, String details) {
-    this.id = id;
-    this.productName = productName;
-    this.price = price;
-    this.details = details;
-  }
-
+  
   public Integer getId() {
     return id;
   }
