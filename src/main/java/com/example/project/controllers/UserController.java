@@ -47,6 +47,12 @@ public class UserController {
     return currentUser;
   }
 
+  @GetMapping("/api/users/{uid}")
+  public User findUserByID(
+          @PathVariable Integer uid) {
+    return service.findUserById(uid);
+  }
+
   @PutMapping("/api/profile/{uid}")
   public User profile(
           @RequestBody User user,

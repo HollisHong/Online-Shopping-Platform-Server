@@ -24,7 +24,7 @@ public class ReviewController {
 
     @PostMapping("/api/products/{pid}/reviews")
     public Review createReview(
-            @PathVariable("pid") Integer pid,
+            @PathVariable("pid") String pid,
             @RequestBody Review newReview) {
         return reviewService.createReview(pid, newReview);
     }
@@ -32,7 +32,7 @@ public class ReviewController {
 
     @GetMapping("/api/products/{pid}/reviews")
     public List<Review> findAllReviewsByProductId(
-            @PathVariable("pid") Integer pid)
+            @PathVariable("pid") String pid)
     {
         return reviewService.findAllReviewsByProductId(pid);
     }

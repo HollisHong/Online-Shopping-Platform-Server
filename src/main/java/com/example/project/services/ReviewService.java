@@ -19,12 +19,12 @@ public class ReviewService {
     @Autowired
     ReviewRepository repository;
 
-    public Review createReview(Integer pid, Review newReview) {
+    public Review createReview(String pid, Review newReview) {
         newReview.setPid(pid);
         return repository.save(newReview);
     }
 
-    public List<Review> findAllReviewsByProductId(Integer pid) {
+    public List<Review> findAllReviewsByProductId(String pid) {
         return repository.findAllReviewsByProductId(pid);
     }
 }

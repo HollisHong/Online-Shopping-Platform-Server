@@ -15,14 +15,26 @@ public class Review {
     private Integer id;
 
     //这个pid是amazon - ASIN
-    private Integer pid;
+    private String pid;
 
     private String content;
+
+    private Integer uid;
 
 
     @ManyToOne
     @JsonIgnore
     private User reviewer;
+
+
+
+    public Integer getUid() {
+        return uid;
+    }
+
+    public void setUid(Integer uid) {
+        this.uid = uid;
+    }
 
 
     public String getContent() {
@@ -43,11 +55,11 @@ public class Review {
         this.id = id;
     }
 
-    public Integer getPid() {
+    public String getPid() {
         return pid;
     }
 
-    public void setPid(Integer pid) {
+    public void setPid(String pid) {
         this.pid = pid;
     }
 
