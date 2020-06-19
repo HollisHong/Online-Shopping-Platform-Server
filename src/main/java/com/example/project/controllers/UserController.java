@@ -4,12 +4,7 @@ import com.example.project.models.User;
 import com.example.project.services.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 
@@ -46,17 +41,17 @@ public class UserController {
     return currentUser;
   }
 
-  @PostMapping("/api/profile")
+  @GetMapping("/api/profile")
   public User profile(HttpSession session) {
     User currentUser = (User) session.getAttribute("currentUser");
     return currentUser;
   }
 
-  @PutMapping("/api/profile")
+  @PutMapping("/api/profile/{uid}")
   public User profile(
           @RequestBody User user,
-          HttpSession session) {
-    User currentUser = service.updateUser(user.getId(), user);
+          HttpSession session, @PathVariable Integer uid) {
+    User currentUser = service.updateUser(uid, user);
     session.setAttribute("currentUser", currentUser);
     return currentUser;
   }
