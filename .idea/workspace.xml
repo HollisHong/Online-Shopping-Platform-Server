@@ -21,6 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b90edc98-e0a2-4ef6-b986-ef8f74bedb31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/prototype/onlineShop.controller.client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/prototype/onlineShop.controller.client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project/repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project/services/UserService.class" afterDir="false" />
+>>>>>>> 8f5c2ad587165e51fe295e02e08cf2b7b8786d17
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +53,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -88,9 +106,13 @@
       <workItem from="1592349644729" duration="1346000" />
       <workItem from="1592353867730" duration="4471000" />
       <workItem from="1592438174260" duration="765000" />
+<<<<<<< HEAD
       <workItem from="1592441160957" duration="1723000" />
       <workItem from="1592447032918" duration="5950000" />
       <workItem from="1592513226526" duration="1580000" />
+=======
+      <workItem from="1592441281103" duration="4632000" />
+>>>>>>> 8f5c2ad587165e51fe295e02e08cf2b7b8786d17
     </task>
     <servers />
   </component>
@@ -119,6 +141,7 @@
       <screen x="0" y="23" width="1920" height="1010" />
     </state>
     <state x="448" y="109" key="#Project_Structure/-1920.23.1920.1057/0.23.1920.1010@0.23.1920.1010" timestamp="1592347033641" />
+<<<<<<< HEAD
     <state width="1878" height="260" key="GridCell.Tab.0.bottom" timestamp="1592531722326">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -139,6 +162,32 @@
     </state>
     <state width="1878" height="274" key="GridCell.Tab.0.right/0.23.1920.1010/-1920.23.1920.1057@0.23.1920.1010" timestamp="1592443331876" />
     <state width="1878" height="260" key="GridCell.Tab.0.right/0.23.1920.1057/-1920.23.1920.1010@0.23.1920.1057" timestamp="1592531722325" />
+=======
+    <state x="556" y="216" key="#com.intellij.ide.util.MemberChooser" timestamp="1592441472511">
+      <screen x="0" y="0" width="1500" height="1000" />
+    </state>
+    <state x="556" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1500.1000@0.0.1500.1000" timestamp="1592441472511" />
+    <state width="1458" height="487" key="GridCell.Tab.0.bottom" timestamp="1592442186824">
+      <screen x="0" y="0" width="1500" height="1000" />
+    </state>
+    <state width="1458" height="487" key="GridCell.Tab.0.bottom/0.0.1500.1000@0.0.1500.1000" timestamp="1592442186824" />
+    <state width="1878" height="274" key="GridCell.Tab.0.bottom/0.23.1920.1010/-1920.23.1920.1057@0.23.1920.1010" timestamp="1592439014655" />
+    <state width="1458" height="487" key="GridCell.Tab.0.center" timestamp="1592442186824">
+      <screen x="0" y="0" width="1500" height="1000" />
+    </state>
+    <state width="1458" height="487" key="GridCell.Tab.0.center/0.0.1500.1000@0.0.1500.1000" timestamp="1592442186824" />
+    <state width="1878" height="274" key="GridCell.Tab.0.center/0.23.1920.1010/-1920.23.1920.1057@0.23.1920.1010" timestamp="1592439014654" />
+    <state width="1458" height="487" key="GridCell.Tab.0.left" timestamp="1592442186823">
+      <screen x="0" y="0" width="1500" height="1000" />
+    </state>
+    <state width="1458" height="487" key="GridCell.Tab.0.left/0.0.1500.1000@0.0.1500.1000" timestamp="1592442186823" />
+    <state width="1878" height="274" key="GridCell.Tab.0.left/0.23.1920.1010/-1920.23.1920.1057@0.23.1920.1010" timestamp="1592439014653" />
+    <state width="1458" height="487" key="GridCell.Tab.0.right" timestamp="1592442186824">
+      <screen x="0" y="0" width="1500" height="1000" />
+    </state>
+    <state width="1458" height="487" key="GridCell.Tab.0.right/0.0.1500.1000@0.0.1500.1000" timestamp="1592442186824" />
+    <state width="1878" height="274" key="GridCell.Tab.0.right/0.23.1920.1010/-1920.23.1920.1057@0.23.1920.1010" timestamp="1592439014654" />
+>>>>>>> 8f5c2ad587165e51fe295e02e08cf2b7b8786d17
     <state x="498" y="190" key="Maven.ArtifactSearchDialog" timestamp="1592346865376">
       <screen x="0" y="23" width="1920" height="1010" />
     </state>
