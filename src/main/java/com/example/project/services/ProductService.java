@@ -16,12 +16,15 @@ import java.util.List;
 public class ProductService {
   @Autowired
   ProductRepository repository;
+  @Autowired
   UserRepository userRepository;
 
   List<Product> products = new ArrayList<Product>();{
   }
 
-  public Product createProduct(Product product) {
+  public Product createProduct(Integer userId, Product product) {
+    User user = userRepository.findUserById(userId);
+    product.setOwner(user);
     return repository.save(product);
   }
   public Product findProductById(Integer id) {

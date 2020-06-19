@@ -28,10 +28,11 @@ public class ProductController {
     return productService.updateProduct(ProductId, updateProduct);
   }
 
-  @PostMapping("/api/products")
+  @PostMapping("/api/users/{uid}")
   public Product createProduct(
+          @PathVariable("uid") Integer userId,
           @RequestBody Product newProduct) {
-    return productService.createProduct(newProduct);
+    return productService.createProduct(userId, newProduct);
   }
 
   @GetMapping("/api/products")

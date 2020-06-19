@@ -26,7 +26,7 @@ public class User {
   private String birthday;
   private String type;
 
-  @OneToMany
+  @OneToMany(mappedBy = "owner")
   private List<Product> products;
 
 
