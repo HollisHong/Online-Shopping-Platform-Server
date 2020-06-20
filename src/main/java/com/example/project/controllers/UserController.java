@@ -62,6 +62,14 @@ public class UserController {
     return currentUser;
   }
 
+  @PutMapping("/api/profile/{uid}/update")
+  public User updateLikes(
+          @RequestBody User user,
+          @PathVariable Integer uid) {
+    User currentUser = service.updateLikes(uid, user);
+    return currentUser;
+  }
+
   @PostMapping("/api/logout")
   public void logout(HttpSession session) {
     session.invalidate();

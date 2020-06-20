@@ -41,4 +41,11 @@ public class UserService {
     return user;
   }
 
+  public User updateLikes(Integer uid, User user) {
+    User u = repository.findUserById(uid);
+    u.setLikes(user.getLikes());
+    u.setLover(user.getLover());
+    repository.save(u);
+    return u;
+  }
 }
