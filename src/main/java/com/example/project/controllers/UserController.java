@@ -49,14 +49,14 @@ public class UserController {
 
   @GetMapping("/api/users/{uid}")
   public User findUserByID(
-          @PathVariable Integer uid) {
+          @PathVariable("uid") Integer uid) {
     return service.findUserById(uid);
   }
 
   @PutMapping("/api/profile/{uid}")
   public User profile(
           @RequestBody User user,
-          HttpSession session, @PathVariable Integer uid) {
+          HttpSession session, @PathVariable("uid") Integer uid) {
     User currentUser = service.updateUser(uid, user);
     session.setAttribute("currentUser", currentUser);
     return currentUser;
@@ -65,7 +65,7 @@ public class UserController {
   @PutMapping("/api/profile/{uid}/update")
   public User updateLikes(
           @RequestBody User user,
-          @PathVariable Integer uid) {
+          @PathVariable("uid") Integer uid) {
     User currentUser = service.updateLikes(uid, user);
     return currentUser;
   }

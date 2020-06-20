@@ -34,18 +34,14 @@ public class UserService {
     user.setEmail(updatedUser.getEmail());
     user.setBirthday(updatedUser.getBirthday());
     user.setProducts(updatedUser.getProducts());
-    user.setLikes(updatedUser.getLikes());
-    user.setLover(updatedUser.getLover());
     repository.save(user);
     return user;
   }
 
-  public User updateLikes(Integer uid, User user) {
-    User u = repository.findUserById(uid);
-    u.setLikes(user.getLikes());
-    u.setLover(user.getLover());
-    repository.save(u);
-    return u;
-
+  public User updateLikes(Integer id, User updatedUser) {
+    User user = repository.findUserById(id);
+    user.setLikes(updatedUser.getLikes());
+    user.setLover(updatedUser.getLover());
+    return repository.save(user);
   }
 }
