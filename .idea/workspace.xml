@@ -19,23 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b90edc98-e0a2-4ef6-b986-ef8f74bedb31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.1384493f.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.1384493f.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.efb40b31.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.efb40b31.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/media/logo.1b64cc74.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/precache-manifest.ea214ad051468b299802c7387bef464e.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/precache-manifest.ea30e7797258eba25ca74050d8efcbf9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.4c4c16d2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.4c4c16d2.chunk.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.1384493f.chunk.js.LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.4c4c16d2.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.a57ec58b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.a57ec58b.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/logo.89c5be5c.svg" beforeDir="false" />
-    </list>
+    <list default="true" id="b90edc98-e0a2-4ef6-b986-ef8f74bedb31" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
