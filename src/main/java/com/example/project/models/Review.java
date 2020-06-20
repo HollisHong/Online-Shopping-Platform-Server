@@ -16,16 +16,14 @@ public class Review {
 
     //这个pid是amazon - ASIN
     private String pid;
-
     private String content;
-
     private Integer uid;
+
 
 
     @ManyToOne
     @JsonIgnore
     private User reviewer;
-
 
 
     public Integer getUid() {

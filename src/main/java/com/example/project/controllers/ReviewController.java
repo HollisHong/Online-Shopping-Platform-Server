@@ -37,5 +37,17 @@ public class ReviewController {
         return reviewService.findAllReviewsByProductId(pid);
     }
 
+    @PutMapping("/api/reviews/{rid}")
+    public Review updateReview(
+            @PathVariable("rid") Integer ReviewId,
+            @RequestBody Review newReview) {
+        return reviewService.updateReview(ReviewId, newReview);
+    }
+
+    @DeleteMapping("/api/reviews/{rid}")
+    public List<Review> deleteReview(
+            @PathVariable("rid") Integer rid) {
+        return reviewService.deleteReview(rid);
+    }
 
 }

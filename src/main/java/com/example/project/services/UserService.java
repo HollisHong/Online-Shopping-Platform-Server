@@ -35,6 +35,8 @@ public class UserService {
     user.setEmail(updatedUser.getEmail());
     user.setBirthday(updatedUser.getBirthday());
     user.setProducts(updatedUser.getProducts());
+    user.setLikes(updatedUser.getLikes());
+    user.setLover(updatedUser.getLover());
     repository.save(user);
     return user;
   }

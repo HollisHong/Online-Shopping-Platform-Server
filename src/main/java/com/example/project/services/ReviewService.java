@@ -9,6 +9,7 @@ import org.hibernate.dialect.ProgressDialect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -26,5 +27,17 @@ public class ReviewService {
 
     public List<Review> findAllReviewsByProductId(String pid) {
         return repository.findAllReviewsByProductId(pid);
+    }
+
+    public Review updateReview(Integer rid, Review newReview) {
+        Review review = repository.findReviewById(rid);
+        review.setContent(newReview.getContent());
+        return repository.save(review);
+    }
+
+    public List<Review> deleteReview(Integer rid) {
+        repository.deleteById(rid);
+        List<Review> result = new ArrayList<>();
+        return result;
     }
 }

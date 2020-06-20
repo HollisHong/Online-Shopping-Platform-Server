@@ -15,5 +15,6 @@ public interface ReviewRepository
     @Query("SELECT review FROM Review review WHERE review.pid=:pid")
     public List<Review> findAllReviewsByProductId(@Param("pid") String pid);
 
-
+    @Query("SELECT review FROM Review review WHERE review.id=:rid")
+    public Review findReviewById(@Param("rid") Integer rid);
 }

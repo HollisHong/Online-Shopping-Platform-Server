@@ -49,13 +49,13 @@ public class ProductService {
     return products;
   }
 
+  //??
   public Product updateProduct(Integer pid, Product updatedProduct){
     Product product = repository.findProductById(pid);
     product.setPrice(updatedProduct.getPrice());
     product.setProductName(updatedProduct.getProductName());
     product.setDetails(updatedProduct.getDetails());
-    repository.save(product);
-    return product;
+    return repository.save(product);
   }
 
 }

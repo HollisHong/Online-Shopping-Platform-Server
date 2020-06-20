@@ -26,6 +26,8 @@ public class User {
   private String email;
   private String birthday;
   private String type;
+  private Integer likes = 0;
+  private String lover;
 
   @OneToMany(mappedBy = "owner")
   private List<Product> products = new ArrayList<>();
@@ -33,8 +35,33 @@ public class User {
   @OneToMany(mappedBy = "reviewer")
   private List<Review> reviews = new ArrayList<>();
 
+
+
   public List<Review> getReviews() {
     return reviews;
+  }
+
+  public void products(Product course)
+  {    this.products.add(course);
+    if(course.getOwner() != this) {
+      course.setOwner(this);
+    }}
+
+
+  public Integer getLikes() {
+    return likes;
+  }
+
+  public void setLikes(Integer likes) {
+    this.likes = likes;
+  }
+
+  public String getLover() {
+    return lover;
+  }
+
+  public void setLover(String lover) {
+    this.lover = lover;
   }
 
   public void addReviews(Review review) {

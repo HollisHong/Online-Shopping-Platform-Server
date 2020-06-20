@@ -31,6 +31,9 @@ public class Product {
 
   public void setOwner(User owner) {
     this.owner = owner;
+    if (!owner.getProducts().contains(this)){
+      owner.getProducts().add(this);
+    }
   }
 
   public Double getPrice() {
