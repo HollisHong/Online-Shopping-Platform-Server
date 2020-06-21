@@ -49,8 +49,7 @@ public class ProductController {
   @GetMapping("/api/users/{uid}/products")
   public List<Product> findAllProductByUserId(
           @PathVariable("uid") Integer userId)
-          {
-            return productService.findAllProductByUserId(userId);
+          {return productService.findAllProductByUserId(userId);
   }
 
 
