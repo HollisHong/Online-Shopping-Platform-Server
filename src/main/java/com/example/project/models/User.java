@@ -3,15 +3,7 @@ package com.example.project.models;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="users")
@@ -37,12 +29,32 @@ public class User {
 
 
 
+  @ManyToMany
+  @JoinTable(
+          name="favorites",
+          joinColumns = @JoinColumn(name="USER_ID", referencedColumnName = "ID"),
+          inverseJoinColumns = @JoinColumn(name = "PRODUCT_ID", referencedColumnName = "ID"))
+  private List<Product> favoriteProducts;
+
+
+  public void setReviews(List<Review> reviews) {
+    this.reviews = reviews;
+  }
+
+  public List<Product> getFavoriteProducts() {
+    return favoriteProducts;
+  }
+
+  public void setFavoriteProducts(List<Product> favoriteProducts) {
+    this.favoriteProducts = favoriteProducts;
+  }
+
   public List<Review> getReviews() {
     return reviews;
   }
 
   public void products(Product course)
-  {    this.products.add(course);
+  {this.products.add(course);
     if(course.getOwner() != this) {
       course.setOwner(this);
     }}

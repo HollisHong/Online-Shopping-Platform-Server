@@ -2,13 +2,8 @@ package com.example.project.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="products")
@@ -24,6 +19,18 @@ public class Product {
   @JsonIgnore
   private User owner;
 
+
+  @ManyToMany(mappedBy = "favoriteProducts")
+  @JsonIgnore
+  public List<User> favoriteUsers;
+
+  public List<User> getFavoriteUsers() {
+    return favoriteUsers;
+  }
+
+  public void setFavoriteUsers(List<User> favoriteUsers) {
+    this.favoriteUsers = favoriteUsers;
+  }
 
   public User getOwner() {
     return owner;
